@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#container{
+    display: flexbox;
+    flex-direction: row;
+    padding: 7% 3%;
+    color: #ffffff;
+    background-color: #ecf2f8;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#header{
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+#data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+#verified{
+    font-size: 0.8rem;
+    opacity: 0.5;
+
+}
+
+ .ltext{
+    font-size: 0.7rem;
+    opacity: 0.7;
+    padding-top: 15px;
+ }
+ .heading {
+    font-size: 1.01rem;
+    position: relative;
+    z-index: 2;
+ }
+
+#image{
+    border-radius: 50px;
+    border: 2px solid #9a7fc5;
+    width: 40px;
+    height: 40px;
+}
+
+#third #image {
+    border:none;
+}
+
+#fifth #image {
+    border:none;
+}
+
+.design{
+    margin-bottom: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 25px;
+    box-shadow: 0.5px 0.5px 4px 0px rgba(0,0,0,0.75);
+}
+
+#first{
+    background-color: #7541c8;
+    position: relative;
+    z-index: 0;
+ }
+.heading{
+    z-index: 2;
+}
+#svg {
+    /* z-index: 1; */
+    position: absolute;
+    right: 10%;
+    top:0px;
+    z-index: 1;
+}
+
+
+
+#first #header {
+    opacity: 1;
+}
+
+#second{
+   background-color: #48556a;
+  
+}
+
+#third{
+  background-color: #ffffff;
+  color: black;
+  
+}
+
+#fourth{
+    background-color: #19212e;
+   
+}
+
+#fifth{
+    background-color: #ffffff;
+    color: #000000
+}
+
+@media (min-width: 664px){
+    
+   #container {
+    display: flex;
+   }
+   #top{
+    display: flex;
+    flex-basis: 50%;
+   }
+   #bottom {
+    display: flex;
+    flex-basis: 50%;
+   }
+   #left-main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 85%;   
+    }
+    #left-main .design{
+        margin-right: 2%;
+    }
+    .design{
+        margin-bottom: 0px;
+    }
+    #top .design{
+        margin-bottom: 2%;
+    }
+    #first{
+        flex-basis: 75%;
+    }
+    #second{
+        flex-basis:25%;
+    }
+    #third{
+        flex-basis: 23%;
+    }
+    #fourth{
+        flex-basis:75%;
+    }
+   #fifth{
+    flex-basis: 15%;
+   }
+
+}
